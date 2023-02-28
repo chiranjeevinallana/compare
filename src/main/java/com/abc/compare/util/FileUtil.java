@@ -4,8 +4,6 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.*;
-import java.net.URISyntaxException;
-import java.net.URL;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -115,8 +113,8 @@ public class FileUtil {
     public static void main(String[] ar){
         FileUtil fileUtil = new FileUtil();
         try {
-            fileUtil.copyFile("C:\\ga\\sample_s.csv", "C:\\ga_copy\\sample_s.csv");
-        } catch (IOException e) {
+            fileUtil.writeResult("abc", "C:\\ga\\sources\\result\\");
+        } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }*/
